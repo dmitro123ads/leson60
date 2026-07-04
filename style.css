@@ -1,10 +1,17 @@
+:root{
+    --main_color: white;
+    --body_color: rgb(235, 235, 235);
+    --price_color: rgb(3, 194, 22);
+}
+
 body{
     margin: 0;
+    background-color: var(--body_color);
 }
 
 .nav{
     background-color: black;
-    color: white;
+    color: var(--main_color);
     justify-content: center;
     margin: 0 auto;
     display: flex;
@@ -31,12 +38,12 @@ body{
 }
 .link{
     text-decoration: none;
-    color: white;
+    color: var(--main_color);
 }
 
 .header-price{
     background-color: black;
-    color: white;
+    color: var(--main_color);
     width: 300px;
     margin-left: 30px;
     opacity: 0.8;
@@ -44,7 +51,6 @@ body{
     padding: 30px 10px;
 }
 .popular{
-    background-color: rgb(235, 235, 235);
     padding: 0px 210px;
 }
 
@@ -56,9 +62,37 @@ body{
 
 img{
     height: 170px;
+    width: 100%;
 }
 .popular-list-text{
-    color: rgb(117, 182, 20);
+    color: var(--price_color);
+}
+
+.popular-article{
+    background-color: var(--main_color);
+    margin-left: 30px;
+}
+
+.popular-subtitle-1{
+}
+
+.dostavka{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 100px 0px 100px 278px;
+}
+.dostavka-art{
+    width: 298px;
+    background-color: var(--main_color);
+}
+.dostavka-art::after{
+    content: '1';
+    background-color: black;
+    z-index: 100px;
+    color: var(--main_color);
+    border-radius: 50px;
+    
 }
 .footer {
     height: 28px;
