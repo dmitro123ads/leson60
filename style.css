@@ -86,14 +86,6 @@ img{
     width: 298px;
     background-color: var(--main_color);
 }
-.dostavka-art::after{
-    content: '1';
-    background-color: black;
-    z-index: 100px;
-    color: var(--main_color);
-    border-radius: 50px;
-    
-}
 .footer {
     height: 28px;
     background-color: black;
